@@ -2,14 +2,14 @@
 This is a simple timer for farming in maplestory
 
 
-##Prereqs##
+##Prereqs
 - install python3
 - install pip
 
-##Libs##
+##Libs
 - pip install pygame 
 
-##how to run##
+##how to run
 default: 90 farming - 30 looting
 - ./farmer.py                    
 
