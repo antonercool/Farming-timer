@@ -16,7 +16,7 @@ if __name__ == '__main__':
     try:
         while True:
             time.sleep(farming_period)
-            mixer.music.load('Shounds/monney.mp3')
+            mixer.music.load('sounds/monney.mp3')
             mixer.music.play() 
             time.sleep(loot_period-3)
             
