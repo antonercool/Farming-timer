@@ -1,6 +1,10 @@
 # Farming-timer
 This is a simple timer for farming in maplestory
 
+## Easy way ##
+- pull the repo
+- Run the .exe in /dist
+
 
 ### Prereqs ###
 - install python3
