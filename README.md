@@ -1,12 +1,13 @@
 # Farming-timer
 This is a simple timer for farming in maplestory
 
-## Easy way ##
-- pull the repo
+## How to run ##
+- Pull the repo
+- Edit your properties.txt (Default farming values 1:30 farm - 00:30 loot)
 - Run the .exe in /dist
 
 
-### Prereqs ###
+### Prereqs for development###
 - install python3
 - install pip
 

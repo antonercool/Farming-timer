@@ -4,8 +4,12 @@ import sys
 
 if __name__ == '__main__': 
     
-    farming_period = 90
-    loot_period = 30
+
+    file = open('../properties.txt')
+    lines = file.readlines()
+    farming_period = int(lines[0].split(':')[1].replace(" ", ""))    
+    loot_period = int(lines[1].split(':')[1].replace(" ", ""))    
+
 
     if len(sys.argv) == 2:
         farming_period = sys.argv[1]
@@ -16,7 +20,7 @@ if __name__ == '__main__':
     try:
         while True:
             time.sleep(farming_period)
-            mixer.music.load('sounds/monney.mp3')
+            mixer.music.load('../sounds/monney.mp3')
             mixer.music.play() 
             time.sleep(loot_period-3)
             
