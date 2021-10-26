@@ -1,3 +1,4 @@
+from typing import cast
 from pygame import mixer  # Load the popular external library
 import time
 import sys
@@ -22,12 +23,15 @@ keyboard.GlobalHotKeys({'<ctrl>+r': restart_timer}).start()
 
 if __name__ == '__main__': 
     
-
-    file = open('../properties.txt')
-    lines = file.readlines()
-    farming_period = int(lines[0].split(':')[1].replace(" ", ""))    
-    loot_period = int(lines[1].split(':')[1].replace(" ", ""))    
-
+    farming_period = 0
+    loot_period = 0
+    try:
+        file = open('../properties.txt')
+        lines = file.readlines()
+        farming_period = int(lines[0].split(':')[1].replace(" ", ""))    
+        loot_period = int(lines[1].split(':')[1].replace(" ", ""))    
+    except Exception as e:
+        print(e)
 
     if len(sys.argv) == 3:
         print("Starting with custom args from commandline")
