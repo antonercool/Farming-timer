@@ -7,7 +7,7 @@ This is a simple timer for farming in maplestory
 - Run the .exe in /dist
 
 
-### Prereqs for development###
+### Prereqs for development ###
 - install python3
 - install pip
 
