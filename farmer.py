@@ -29,7 +29,10 @@ if __name__ == '__main__':
     loot_period = int(lines[1].split(':')[1].replace(" ", ""))    
 
 
-    if len(sys.argv) == 2:
+    if len(sys.argv) == 3:
+        print("Starting with custom args from commandline")
+        for args in sys.argv:
+            print(args)
         farming_period = sys.argv[1]
         loot_period = sys.argv[2] 
     
