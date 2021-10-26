@@ -16,7 +16,7 @@ def restart_timer():
 def restart_program():
     """Restarts the current program
     """
-    os.execv(sys.argv[0], sys.argv)
+    os.execl(sys.executable, 'python', __file__, *sys.argv[1:])
 
 keyboard.GlobalHotKeys({'<ctrl>+r': restart_timer}).start()
 
@@ -33,12 +33,6 @@ if __name__ == '__main__':
     except Exception as e:
         print(e)
 
-    if len(sys.argv) == 3:
-        print("Starting with custom args from commandline")
-        for args in sys.argv:
-            print(args)
-        farming_period = sys.argv[1]
-        loot_period = sys.argv[2] 
     
     mixer.init()
     
