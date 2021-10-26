@@ -12,9 +12,11 @@ This is a simple timer for farming in maplestory
 - install pip
 
 ### Libs ###
-- pip install pygame 
+- pip install -r requirements.txt 
 
 ### how to run ###
+pres Ctrl+r to restart timer
+
 default: 90 farming - 30 looting
 - ./farmer.py                    
 

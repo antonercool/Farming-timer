@@ -1,6 +1,24 @@
 from pygame import mixer  # Load the popular external library
 import time
 import sys
+import os
+import sys
+import psutil
+import logging
+from pynput import keyboard
+
+
+def restart_timer():
+    print("----------Restarting timer----------")
+    restart_program()
+
+def restart_program():
+    """Restarts the current program
+    """
+    os.execv(sys.argv[0], sys.argv)
+
+keyboard.GlobalHotKeys({'<ctrl>+r': restart_timer}).start()
+
 
 if __name__ == '__main__': 
     
@@ -28,3 +46,4 @@ if __name__ == '__main__':
         pass
     
  
+
