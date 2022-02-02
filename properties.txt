@@ -1,3 +1,2 @@
 farming time : 90
 looting time : 30
-
